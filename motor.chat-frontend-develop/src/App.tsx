@@ -4,6 +4,7 @@ import LoginForm from './components/LoginForm/LoginForm';
 import MessageInput from './components/MessageInput/MessageInput';
 import Message from './components/Message/Message';
 import './App.css';
+import ConnectionStatus from './components/ConnectionStatus/ConnectionStatus';
 
 type Message = {
   id: number;
@@ -65,12 +66,7 @@ function App() {
     <div className="chat-container">
       <div className="chat-header">
         <h1>chat</h1>
-        <div className="connection-status">
-          <span className={`status ${isConnected ? 'connected' : 'disconnected'}`}>
-            {isConnected ? '🟢 Conectado' : '🔴 Desconectado'}
-          </span>
-          <span className="username">Usuário: {username}</span>
-        </div>
+        <ConnectionStatus isConnected={isConnected} username={username} />
       </div>
 
       <div className="messages-container">
