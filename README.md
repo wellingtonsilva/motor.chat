@@ -14,10 +14,10 @@ npm install
 npm run dev
 ```
 
-```bash
+
 ### Backend (`motor.chat-backend-develop`)
 
-
+```bash
 cd motor.chat.backend-develop
 npm install
 npm run dev
