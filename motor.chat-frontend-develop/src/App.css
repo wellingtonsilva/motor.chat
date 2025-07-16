@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #f8fafc;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.own-message {
+  background: #667eea;
+  color: white;
+  margin-left: auto;
+  border-bottom-right-radius: 5px;
+}
+
+.other-message {
+  background: white;
+  border: 1px solid #e2e8f0;
+  margin-right: auto;
+  border-bottom-left-radius: 5px;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.message-user {
+  font-weight: bold;
+}
+
+.message-content {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.message-input-container {
+  display: flex;
+  padding: 1rem;
+  background: white;
+  border-top: 1px solid #e2e8f0;
+  gap: 0.5rem;
+}
+
+.message-input-container input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+}
+
+.message-input-container input:focus {
+  border-color: #667eea;
+}
+
+.message-input-container button {
+  padding: 12px 24px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.message-input-container button:hover:not(:disabled) {
+  background: #5a67d8;
+}
+
+.message-input-container button:disabled {
+  background: #cbd5e0;
+  cursor: not-allowed;
+}
