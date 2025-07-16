@@ -1,5 +1,7 @@
 # Motor.chat
 
+![Visual do projeto](./img.jpg)
+
 ## 🚀 Instalação
 
 Execute os seguintes comandos **dentro de cada pasta**:
@@ -10,10 +12,13 @@ Execute os seguintes comandos **dentro de cada pasta**:
 cd motor.chat-frontend-develop
 npm install
 npm run dev
-
-### Backend (`motor.chat-backend-develop`)
+```
 
 ```bash
+### Backend (`motor.chat-backend-develop`)
+
+
 cd motor.chat.backend-develop
 npm install
 npm run dev
+```
